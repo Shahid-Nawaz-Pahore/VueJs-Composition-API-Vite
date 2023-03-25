@@ -6,9 +6,10 @@ let number = reactive({
 })
 setTimeout(()=>{
   console.log('timeout function is called')
+  console.log("number" ,number)
   number.a=98,
   number.b=878,
-  console.log(typeof number)
+  
   console.log(`value of ${number.a} and ${number.b}`)
 },2000)
 </script>
